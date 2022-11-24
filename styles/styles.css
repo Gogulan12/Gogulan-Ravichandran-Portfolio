@@ -1,0 +1,583 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fahkwang&display=swap");
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption,
+figure,
+main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details,
+menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  background-color: #f7f7f5;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1260px;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Fahkwang", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.25rem;
+  padding-top: 20px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo h2 {
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+
+.headerNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+.headerNav ul li {
+  list-style: none;
+  padding: 0 30px;
+  text-decoration: none;
+}
+
+.headerNav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.title {
+  padding: 150px 0;
+  text-align: center;
+}
+
+.title h2,
+.title h1 {
+  font-weight: 400;
+  font-size: 3.5rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.title h1 {
+  font-size: 5rem;
+}
+
+.title button {
+  background-color: black;
+  color: white;
+  padding: 15px 35px;
+  text-align: center;
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  margin-top: 50px;
+  border: none;
+}
+
+.separateColumns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.columnOne,
+.columnTwo {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projectOne,
+.projectTwo,
+.projectThree {
+  margin-bottom: 50px;
+}
+
+.projectImage {
+  height: 50vh;
+  overflow: hidden;
+}
+
+.projectOneImage {
+  background-image: url(../images/charmander-minimalist-poster-pokemon-svit-artprints.jpg);
+  -o-object-fit: fill;
+     object-fit: fill;
+  background-position: center;
+}
+
+.projectTwoImage {
+  background-image: url(../images/image-5.jpg);
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-position: top -30px right -100px;
+}
+
+.projectThreeImage {
+  background-image: url(../images/textilesPoster.jpg);
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.about {
+  padding: 100px 0;
+}
+
+.aboutandImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 0 auto;
+}
+
+.aboutTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 50%;
+}
+
+.aboutImage {
+  width: 50%;
+  display: inline-block;
+}
+
+.aboutImage img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  display: block;
+  border: 40px solid #d16938;
+}
+
+.aboutPara {
+  padding: 50px 0;
+  width: 50%;
+  line-height: 1.5;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0;
+}
+
+.skillsTitle {
+  width: 50%;
+}
+
+.listSkills {
+  width: 50%;
+  line-height: 1.5;
+}
+
+.listSkills ul li {
+  list-style: none;
+}
+
+.accomplishment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0;
+}
+
+.accomplishmentTitle {
+  width: 50%;
+}
+
+.accomplishmentSkills {
+  width: 50%;
+  line-height: 1.5;
+}
+
+.accomplishmentSkills ul li {
+  list-style: none;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0 200px 0;
+}
+
+.contactField {
+  width: 60%;
+}
+
+form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.inputFields {
+  width: 100%;
+}
+
+.form .button {
+  height: 50px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.submit {
+  position: absolute;
+  right: 0;
+  padding: 15px 50px;
+  border-style: none;
+  background-color: #d16938;
+  color: white;
+}
+
+.form {
+  margin: 5px 0;
+}
+
+.inputFields {
+  padding: 20px 0 20px 0;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: #f7f7f5;
+}
+
+.bottomLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0;
+}
+
+.messageBottom {
+  width: 35%;
+}
+
+.columns {
+  width: 20%;
+}
+
+.columns p {
+  line-height: 2.5;
+  margin: 0;
+}
+
+.columns ul {
+  list-style: none;
+  padding: 0;
+}
+
+.columns ul li a {
+  text-decoration: none;
+  line-height: 2.5;
+}
+
+footer {
+  border-top: 1px solid black;
+  padding-top: 15px;
+  padding-bottom: 45px;
+}
