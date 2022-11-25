@@ -36,6 +36,16 @@ header {
   text-decoration: none;
   color: black;
 }
+
+.headerNav ul li a:hover {
+  color: variables.$secondaryColor;
+  text-decoration: none;
+
+  border-bottom: 3px solid variables.$secondaryColor;
+
+  padding-bottom: 5px;
+}
+
 ///////////////////////////TITLE SECITON/////////////////////////////
 
 .title {
@@ -72,6 +82,11 @@ h4 {
   margin-top: 50px;
   border: none;
   cursor: pointer;
+  transition: tranform 0.2s;
+}
+.title button:hover {
+  transform: scale(1.03);
+  background-color: variables.$secondaryColor;
 }
 
 ///////////////////////////PROJECTS SECITON/////////////////////////////
@@ -204,6 +219,12 @@ h4 {
   width: 50%;
   line-height: 1.5;
 }
+
+.listSkills ul {
+  line-height: 1.75;
+  padding: 0;
+}
+
 .listSkills ul li {
   list-style: none;
 }
@@ -223,8 +244,23 @@ h4 {
   width: 50%;
   line-height: 1.5;
 }
+
+.accomplishmentSkills h3 {
+  margin: 5px;
+}
+
+.accomplishmentSkills p {
+  color: variables.$secondaryColor;
+  margin: 0;
+}
+
+.accomplishmentSkills ul {
+  padding: 0;
+}
+
 .accomplishmentSkills ul li {
   list-style: none;
+  padding-bottom: 15px;
 }
 
 ///////////////////////////CONTACT SECITON/////////////////////////////////
@@ -258,8 +294,15 @@ form {
   right: 0;
   padding: 15px 50px;
   border-style: none;
-  background-color: variables.$secondaryColor;
+  background-color: black;
   color: white;
+  cursor: pointer;
+  transition: tranform 0.2s;
+}
+
+.submit:hover {
+  transform: scale(1.03);
+  background-color: variables.$secondaryColor;
 }
 
 .form {
@@ -310,4 +353,22 @@ footer {
   border-top: 1px solid black;
   padding-top: 15px;
   padding-bottom: 45px;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.social ul {
+  display: flex;
+  padding: 0;
+}
+
+.social ul li {
+  list-style: none;
+  padding: 0 15px;
+}
+
+.social img {
+  width: 30px;
 }

@@ -325,6 +325,13 @@ header {
   color: black;
 }
 
+.headerNav ul li a:hover {
+  color: #d16938;
+  text-decoration: none;
+  border-bottom: 3px solid #d16938;
+  padding-bottom: 5px;
+}
+
 .title {
   padding: 150px 0;
   text-align: center;
@@ -359,6 +366,14 @@ h4 {
   margin-top: 50px;
   border: none;
   cursor: pointer;
+  -webkit-transition: tranform 0.2s;
+  transition: tranform 0.2s;
+}
+
+.title button:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  background-color: #d16938;
 }
 
 .separateColumns {
@@ -515,6 +530,11 @@ h4 {
   line-height: 1.5;
 }
 
+.listSkills ul {
+  line-height: 1.75;
+  padding: 0;
+}
+
 .listSkills ul li {
   list-style: none;
 }
@@ -535,8 +555,22 @@ h4 {
   line-height: 1.5;
 }
 
+.accomplishmentSkills h3 {
+  margin: 5px;
+}
+
+.accomplishmentSkills p {
+  color: #d16938;
+  margin: 0;
+}
+
+.accomplishmentSkills ul {
+  padding: 0;
+}
+
 .accomplishmentSkills ul li {
   list-style: none;
+  padding-bottom: 15px;
 }
 
 .contact {
@@ -576,8 +610,17 @@ form {
   right: 0;
   padding: 15px 50px;
   border-style: none;
-  background-color: #d16938;
+  background-color: black;
   color: white;
+  cursor: pointer;
+  -webkit-transition: tranform 0.2s;
+  transition: tranform 0.2s;
+}
+
+.submit:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  background-color: #d16938;
 }
 
 .form {
@@ -626,4 +669,29 @@ footer {
   border-top: 1px solid black;
   padding-top: 15px;
   padding-bottom: 45px;
+}
+
+.footerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+.social ul li {
+  list-style: none;
+  padding: 0 15px;
+}
+
+.social img {
+  width: 30px;
 }
