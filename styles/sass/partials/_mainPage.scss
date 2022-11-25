@@ -55,6 +55,13 @@ header {
   font-size: 5rem;
 }
 
+h4 {
+  color: variables.$secondaryColor;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+}
+
 .title button {
   background-color: black;
   color: white;
@@ -64,6 +71,7 @@ header {
   font-family: "Inter", sans-serif;
   margin-top: 50px;
   border: none;
+  cursor: pointer;
 }
 
 ///////////////////////////PROJECTS SECITON/////////////////////////////
@@ -103,11 +111,14 @@ header {
   background-image: url(../images/charmander-minimalist-poster-pokemon-svit-artprints.jpg);
   object-fit: fill;
   background-position: center;
+  transition: transform 0.2s;
 }
+
 .projectTwoImage {
   background-image: url(../images/image-5.jpg);
   object-fit: contain;
   background-position: top -30px right -100px;
+  transition: transform 0.2s;
 }
 
 .projectThreeImage {
@@ -115,6 +126,20 @@ header {
   object-fit: contain;
   // background-position: top -30px right -100px;
   background-repeat: no-repeat;
+  transition: transform 0.2s;
+}
+
+.projectOneImage:hover,
+.projectTwoImage:hover,
+.projectThreeImage:hover {
+  transform: scale(1.03);
+}
+
+.projectOneText p a,
+.projectTwoText p a,
+.projectThreeText p a {
+  text-decoration: none;
+  color: variables.$secondaryColor;
 }
 
 ///////////////////////////ABOUT SECITON/////////////////////////////////
@@ -149,6 +174,12 @@ header {
   width: 100%;
   display: block;
   border: 40px solid variables.$secondaryColor;
+  transition: transform 0.2s;
+}
+
+.aboutImage img:hover {
+  transform: scale(1.03);
+  background-color: variables.$secondaryColor;
 }
 
 .aboutPara {
@@ -199,7 +230,7 @@ header {
 ///////////////////////////CONTACT SECITON/////////////////////////////////
 .contact {
   display: flex;
-  padding: 100px 0 200px 0;
+  padding: 0 0 200px 0;
 }
 
 .contactField {
@@ -270,6 +301,7 @@ form {
 .columns ul li a {
   text-decoration: none;
   line-height: 2.5;
+  color: black;
 }
 
 ///////////////////////////FOOTER SECTION/////////////////////////////////

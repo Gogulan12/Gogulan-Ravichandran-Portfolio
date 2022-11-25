@@ -277,7 +277,8 @@ html {
 }
 
 h1,
-h2 {
+h2,
+h4 {
   font-family: "Fahkwang", sans-serif;
 }
 
@@ -341,6 +342,13 @@ header {
   font-size: 5rem;
 }
 
+h4 {
+  color: #d16938;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+}
+
 .title button {
   background-color: black;
   color: white;
@@ -350,6 +358,7 @@ header {
   font-family: "Inter", sans-serif;
   margin-top: 50px;
   border: none;
+  cursor: pointer;
 }
 
 .separateColumns {
@@ -394,6 +403,10 @@ header {
   -o-object-fit: fill;
      object-fit: fill;
   background-position: center;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .projectTwoImage {
@@ -401,6 +414,10 @@ header {
   -o-object-fit: contain;
      object-fit: contain;
   background-position: top -30px right -100px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .projectThreeImage {
@@ -408,6 +425,24 @@ header {
   -o-object-fit: contain;
      object-fit: contain;
   background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.projectOneImage:hover,
+.projectTwoImage:hover,
+.projectThreeImage:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.projectOneText p a,
+.projectTwoText p a,
+.projectThreeText p a {
+  text-decoration: none;
+  color: #d16938;
 }
 
 .about {
@@ -446,6 +481,16 @@ header {
   width: 100%;
   display: block;
   border: 40px solid #d16938;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.aboutImage img:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  background-color: #d16938;
 }
 
 .aboutPara {
@@ -498,7 +543,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 100px 0 200px 0;
+  padding: 0 0 200px 0;
 }
 
 .contactField {
@@ -574,6 +619,7 @@ form {
 .columns ul li a {
   text-decoration: none;
   line-height: 2.5;
+  color: black;
 }
 
 footer {
