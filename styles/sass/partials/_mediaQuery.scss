@@ -1,0 +1,184 @@
+@use "./variables";
+
+@media (max-width: 1033px) {
+  .title h1 {
+    font-size: 3rem;
+  }
+
+  .title h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .bottomLinks {
+    flex-direction: column;
+    text-align: center;
+  }
+  .messageBottom,
+  .columns {
+    width: 100%;
+  }
+
+  .contactField {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  //////////////HEADER SECTION//////////////
+  .hamburger {
+    display: block;
+    padding-top: 17px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .headerNav ul {
+    position: fixed;
+    right: -100%;
+    top: 50px;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    background-color: variables.$secondaryColor;
+  }
+
+  .headerNav ul li {
+    padding: 10px 0;
+  }
+
+  .headerNav ul.active {
+    right: 0;
+    position: absolute;
+  }
+
+  .headerNav ul.active li a {
+    color: white;
+  }
+
+  .headerNav ul.active li a:hover {
+    border-bottom: 3px solid black;
+  }
+
+  /////////////PROJECTS SECTION///////////
+
+  .separateColumns {
+    flex-direction: column;
+  }
+
+  .columnOne,
+  .columnTwo {
+    width: 100%;
+  }
+  .projectOneImage {
+    background-repeat: no-repeat;
+    background-color: #ee892f;
+  }
+
+  .projectTwoImage {
+    background-position: top -200px right -100px;
+  }
+
+  .projectImage {
+    height: 20vh;
+  }
+
+  /////////////ABOUT SECTION///////////
+
+  .aboutandImage {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .aboutImage {
+    width: 100%;
+  }
+
+  .aboutTitle h2 {
+    width: 100%;
+  }
+
+  .aboutPara {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 627px) {
+  .title h1 {
+    font-size: 2.5rem;
+  }
+  .title h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 610px) {
+  .title h1 {
+    font-size: 2rem;
+  }
+  .title h2 {
+    font-size: 1.5rem;
+  }
+
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .skillsTitle,
+  .listSkills {
+    width: 100%;
+  }
+
+  .accomplishment {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .accomplishmentTitle,
+  .accomplishmentSkills {
+    width: 100%;
+  }
+
+  .contactField {
+    width: 100%;
+  }
+}
+
+@media (max-width: 410px) {
+  .title h1 {
+    font-size: 1.3rem;
+  }
+  .title h2 {
+    font-size: 1rem;
+  }
+  .title button {
+    padding: 10px 30px;
+    font-size: 0.9rem;
+  }
+
+  .aboutImage img {
+    border: 20px solid variables.$secondaryColor;
+  }
+
+  .footerContainer {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+}

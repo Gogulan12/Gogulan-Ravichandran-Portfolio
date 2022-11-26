@@ -46,10 +46,24 @@ header {
   padding-bottom: 5px;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3x ease-in-out;
+  background-color: black;
+}
+
 ///////////////////////////TITLE SECITON/////////////////////////////
 
 .title {
-  padding: 150px 0;
+  padding: 200px 0;
   text-align: center;
 }
 

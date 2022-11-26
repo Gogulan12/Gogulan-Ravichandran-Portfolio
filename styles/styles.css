@@ -332,8 +332,23 @@ header {
   padding-bottom: 5px;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3x ease-in-out;
+  transition: all 0.3x ease-in-out;
+  background-color: black;
+}
+
 .title {
-  padding: 150px 0;
+  padding: 200px 0;
   text-align: center;
 }
 
@@ -694,4 +709,187 @@ footer {
 
 .social img {
   width: 30px;
+}
+
+@media (max-width: 1033px) {
+  .title h1 {
+    font-size: 3rem;
+  }
+  .title h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 900px) {
+  .bottomLinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .messageBottom,
+.columns {
+    width: 100%;
+  }
+  .contactField {
+    width: 100%;
+  }
+}
+@media (max-width: 750px) {
+  .hamburger {
+    display: block;
+    padding-top: 17px;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+  .headerNav ul {
+    position: fixed;
+    right: -100%;
+    top: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #d16938;
+  }
+  .headerNav ul li {
+    padding: 10px 0;
+  }
+  .headerNav ul.active {
+    right: 0;
+    position: absolute;
+  }
+  .headerNav ul.active li a {
+    color: white;
+  }
+  .headerNav ul.active li a:hover {
+    border-bottom: 3px solid black;
+  }
+  .separateColumns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .columnOne,
+.columnTwo {
+    width: 100%;
+  }
+  .projectOneImage {
+    background-repeat: no-repeat;
+    background-color: #ee892f;
+  }
+  .projectTwoImage {
+    background-position: top -200px right -100px;
+  }
+  .projectImage {
+    height: 20vh;
+  }
+  .aboutandImage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutImage {
+    width: 100%;
+  }
+  .aboutTitle h2 {
+    width: 100%;
+  }
+  .aboutPara {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 627px) {
+  .title h1 {
+    font-size: 2.5rem;
+  }
+  .title h2 {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 610px) {
+  .title h1 {
+    font-size: 2rem;
+  }
+  .title h2 {
+    font-size: 1.5rem;
+  }
+  .skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .skillsTitle,
+.listSkills {
+    width: 100%;
+  }
+  .accomplishment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .accomplishmentTitle,
+.accomplishmentSkills {
+    width: 100%;
+  }
+  .contactField {
+    width: 100%;
+  }
+}
+@media (max-width: 410px) {
+  .title h1 {
+    font-size: 1.3rem;
+  }
+  .title h2 {
+    font-size: 1rem;
+  }
+  .title button {
+    padding: 10px 30px;
+    font-size: 0.9rem;
+  }
+  .aboutImage img {
+    border: 20px solid #d16938;
+  }
+  .footerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 0.9rem;
+  }
 }
