@@ -217,6 +217,14 @@ h4 {
   // padding-left: 10%;
   line-height: 1.5;
 }
+.aboutPara p a {
+  text-decoration: none;
+  color: variables.$secondaryColor;
+  font-weight: bold;
+}
+.aboutPara p a:hover {
+  text-decoration: underline;
+}
 
 ///////////////////////////SKILLS SECITON/////////////////////////////////
 .skills {

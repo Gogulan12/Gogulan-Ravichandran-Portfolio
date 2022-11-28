@@ -529,6 +529,16 @@ h4 {
   line-height: 1.5;
 }
 
+.aboutPara p a {
+  text-decoration: none;
+  color: #d16938;
+  font-weight: bold;
+}
+
+.aboutPara p a:hover {
+  text-decoration: underline;
+}
+
 .skills {
   display: -webkit-box;
   display: -ms-flexbox;
