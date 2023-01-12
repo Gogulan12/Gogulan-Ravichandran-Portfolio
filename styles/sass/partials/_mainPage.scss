@@ -131,10 +131,15 @@ h4 {
   width: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  justify-content: center;
+  // justify-content: space-between;
+  // justify-content: center;
   // margin-bottom: 50px;
 }
+
+.columnTwo {
+  padding-top: 25%;
+}
+
 .projectOne,
 .projectTwo,
 .projectThree {
@@ -174,15 +179,25 @@ h4 {
   transition: transform 0.2s;
 }
 
+.projectFourImage {
+  background-image: url(../images/Renee-Suen-TL-June-2021-Myth-SPREAD-4.jpg);
+  object-fit: contain;
+  background-position: top -30px right -100px;
+  background-repeat: no-repeat;
+  transition: transform 0.2s;
+}
+
 .projectOneImage:hover,
 .projectTwoImage:hover,
-.projectThreeImage:hover {
+.projectThreeImage:hover,
+.projectFourImage:hover {
   transform: scale(1.03);
 }
 
 .projectOneText p a,
 .projectTwoText p a,
-.projectThreeText p a {
+.projectThreeText p a,
+.projectFourText p a {
   text-decoration: none;
   color: variables.$secondaryColor;
 }
