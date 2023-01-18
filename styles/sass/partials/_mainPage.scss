@@ -142,7 +142,9 @@ h4 {
 
 .projectOne,
 .projectTwo,
-.projectThree {
+.projectThree,
+.projectFour,
+.projectFive {
   margin-bottom: 50px;
 }
 
@@ -187,17 +189,27 @@ h4 {
   transition: transform 0.2s;
 }
 
+.projectFiveImage {
+  background-image: url(../images/todo-image.jpg);
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.2s;
+}
+
 .projectOneImage:hover,
 .projectTwoImage:hover,
 .projectThreeImage:hover,
-.projectFourImage:hover {
+.projectFourImage:hover,
+.projectFiveImage:hover {
   transform: scale(1.03);
 }
 
 .projectOneText p a,
 .projectTwoText p a,
 .projectThreeText p a,
-.projectFourText p a {
+.projectFourText p a,
+.projectFiveText p a {
   text-decoration: none;
   color: variables.$secondaryColor;
 }
