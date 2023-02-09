@@ -194,7 +194,7 @@ h4 {
   margin: 0 auto;
   -webkit-box-sizing: none;
           box-sizing: none;
-  max-width: 1260px;
+  max-width: 1430px;
 }
 
 a {
@@ -489,11 +489,11 @@ form {
 .columns ul li a {
   text-decoration: none;
   line-height: 2.5;
-  color: black;
+  color: white;
 }
 
 footer {
-  border-top: 1px solid black;
+  border-top: 1px solid white;
   padding-top: 15px;
   padding-bottom: 45px;
 }
