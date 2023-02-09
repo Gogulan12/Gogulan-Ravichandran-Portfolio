@@ -9,3 +9,18 @@ html {
   margin: 0 auto;
   max-width: 1260px;
 }
+
+body {
+  background: #20262c;
+  margin: 0;
+  // height: 100vh;
+  /* display: grid; */
+  /* place-content: center; */
+  font-family: "Poppins", sans-serif;
+  // display: flex;
+  // justify-content: center;
+  // align-self: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+}
