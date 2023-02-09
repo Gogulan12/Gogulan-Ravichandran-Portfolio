@@ -194,9 +194,7 @@ h4 {
   margin: 0 auto;
   -webkit-box-sizing: none;
           box-sizing: none;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  max-width: 1260px;
 }
 
 a {
@@ -209,7 +207,7 @@ article {
   padding: 1.125em;
   border-radius: 1em;
   margin: 0.625em;
-  margin-top: 4em;
+  margin-top: 2em;
 }
 
 img {

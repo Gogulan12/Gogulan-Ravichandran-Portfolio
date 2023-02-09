@@ -224,7 +224,8 @@ h4 {
   flex-wrap: wrap;
   margin: 0 auto;
   box-sizing: none;
-  justify-content: space-evenly;
+  // justify-content: space-evenly;
+  max-width: 1260px;
 }
 
 a {
@@ -237,7 +238,7 @@ article {
   padding: 1.125em;
   border-radius: 1em;
   margin: 0.625em;
-  margin-top: 4em;
+  margin-top: 2em;
 }
 
 img {
