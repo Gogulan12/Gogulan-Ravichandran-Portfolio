@@ -29,7 +29,7 @@
   //////////////HEADER SECTION//////////////
   .hamburger {
     display: block;
-    padding-top: 17px;
+    padding-top: 23px;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -177,7 +177,7 @@
   }
 
   .aboutImage img {
-    border: 20px solid variables.$secondaryColor;
+    // border: 20px solid variables.$secondaryColor;
   }
 
   .footerContainer {

@@ -84,7 +84,7 @@ header {
   margin: 5px auto;
   -webkit-transition: all 0.3x ease-in-out;
   transition: all 0.3x ease-in-out;
-  background-color: black;
+  background-color: white;
 }
 
 .title {
@@ -194,6 +194,9 @@ h4 {
   margin: 0 auto;
   -webkit-box-sizing: none;
           box-sizing: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 a {
@@ -206,6 +209,7 @@ article {
   padding: 1.125em;
   border-radius: 1em;
   margin: 0.625em;
+  margin-top: 4em;
 }
 
 img {
@@ -312,7 +316,6 @@ svg {
      object-fit: contain;
   width: 100%;
   display: block;
-  border: 40px solid #d16938;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
@@ -322,7 +325,6 @@ svg {
 .aboutImage img:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
-  background-color: #d16938;
 }
 
 .aboutPara {
@@ -550,7 +552,7 @@ footer {
 @media (max-width: 750px) {
   .hamburger {
     display: block;
-    padding-top: 17px;
+    padding-top: 23px;
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -692,9 +694,6 @@ footer {
   .title button {
     padding: 10px 30px;
     font-size: 0.9rem;
-  }
-  .aboutImage img {
-    border: 20px solid #d16938;
   }
   .footerContainer {
     -webkit-box-orient: vertical;

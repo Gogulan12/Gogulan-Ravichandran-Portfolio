@@ -57,7 +57,7 @@ header {
   height: 3px;
   margin: 5px auto;
   transition: all 0.3x ease-in-out;
-  background-color: black;
+  background-color: white;
 }
 
 ///////////////////////////TITLE SECITON/////////////////////////////
@@ -224,6 +224,7 @@ h4 {
   flex-wrap: wrap;
   margin: 0 auto;
   box-sizing: none;
+  justify-content: space-evenly;
 }
 
 a {
@@ -236,6 +237,7 @@ article {
   padding: 1.125em;
   border-radius: 1em;
   margin: 0.625em;
+  margin-top: 4em;
 }
 
 img {
@@ -335,13 +337,13 @@ svg {
   object-fit: contain;
   width: 100%;
   display: block;
-  border: 40px solid variables.$secondaryColor;
+  // border: 40px solid variables.$secondaryColor;
   transition: transform 0.2s;
 }
 
 .aboutImage img:hover {
   transform: scale(1.03);
-  background-color: variables.$secondaryColor;
+  // background-color: variables.$secondaryColor;
 }
 
 .aboutPara {
