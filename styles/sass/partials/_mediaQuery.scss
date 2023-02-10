@@ -1,12 +1,16 @@
 @use "./variables";
 
-@media (max-width: 1033px) {
+@media (max-width: 1215px) {
   .title h1 {
     font-size: 3rem;
   }
 
   .title h2 {
     font-size: 2rem;
+  }
+
+  .title button {
+    font-size: 1em;
   }
 }
 
@@ -45,7 +49,7 @@
   .headerNav ul {
     position: fixed;
     right: -100%;
-    top: 50px;
+    top: 75px;
     flex-direction: column;
     width: 100%;
     text-align: center;
@@ -119,16 +123,20 @@
   }
 }
 
-@media (max-width: 627px) {
+@media (max-width: 735px) {
   .title h1 {
     font-size: 2.5rem;
   }
   .title h2 {
     font-size: 1.75rem;
   }
+  .projectTitle {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
 }
 
-@media (max-width: 610px) {
+@media (max-width: 618px) {
   .title h1 {
     font-size: 2rem;
   }
@@ -136,6 +144,12 @@
     font-size: 1.5rem;
   }
 
+  .title button {
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 750px) {
   .skills {
     flex-direction: column;
     align-items: center;
@@ -164,13 +178,27 @@
   }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 496px) {
   .title h1 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .title h2 {
-    font-size: 1rem;
+    font-size: 1em;
   }
+
+  // .projectTitle {
+  //   font-size: 1.5rem;
+  //   margin: 1.5rem 0;
+  // }
+}
+
+@media (max-width: 410px) {
+  // .title h1 {
+  //   font-size: 1.3rem;
+  // }
+  // .title h2 {
+  //   font-size: 1rem;
+  // }
   .title button {
     padding: 10px 30px;
     font-size: 0.9rem;
@@ -185,5 +213,14 @@
     text-align: center;
     align-items: center;
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 377px) {
+  .title h1 {
+    font-size: 1.3rem;
+  }
+  .title h2 {
+    font-size: 1rem;
   }
 }

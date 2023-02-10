@@ -164,6 +164,9 @@ h4 {
   cursor: pointer;
   -webkit-transition: tranform 0.2s;
   transition: tranform 0.2s;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25em;
+  border-radius: 1em;
 }
 
 .title button:hover {
@@ -175,8 +178,6 @@ h4 {
 .projects {
   background: #20262c;
   margin: 0;
-  /* display: grid; */
-  /* place-content: center; */
   font-family: "Poppins", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,6 +209,15 @@ article {
   border-radius: 1em;
   margin: 0.625em;
   margin-top: 2em;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+article:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 img {
@@ -218,6 +228,10 @@ img {
 .imageContainer {
   height: 187.5px;
   overflow: hidden;
+}
+
+h4.tag {
+  margin-bottom: 0;
 }
 
 .tag {
@@ -251,14 +265,27 @@ img {
   color: #fbf8f3;
 }
 
+.projectTitle {
+  color: white;
+  font-size: 2.5rem;
+  line-height: 120%;
+  margin: 0.5em 0;
+}
+
 h2 a {
   color: white;
   font-size: 2.5rem;
   line-height: 120%;
 }
 
-p a {
+article p {
   color: #b1c4d9;
+}
+
+.linkContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 a.cta {
@@ -266,6 +293,11 @@ a.cta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+a.cta:hover {
+  -webkit-text-decoration: underline cadetblue;
+          text-decoration: underline cadetblue;
 }
 
 a.cta p {
@@ -277,6 +309,10 @@ svg {
   margin-left: 0.5em;
   -ms-flex-item-align: center;
       align-self: center;
+}
+
+.githublink {
+  margin-left: 2em;
 }
 
 .about {
@@ -301,6 +337,7 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  font-size: 1.5rem;
   width: 50%;
 }
 
@@ -350,6 +387,7 @@ svg {
 
 .skillsTitle {
   width: 50%;
+  font-size: 1.25rem;
 }
 
 .listSkills {
@@ -375,6 +413,7 @@ svg {
 
 .accomplishmentTitle {
   width: 50%;
+  font-size: 1.25rem;
 }
 
 .accomplishmentSkills {
@@ -430,6 +469,7 @@ form {
   height: 50px;
   position: relative;
   margin-top: 30px;
+  font-family: "Poppins", sans-serif;
 }
 
 .submit {
@@ -442,6 +482,8 @@ form {
   cursor: pointer;
   -webkit-transition: tranform 0.2s;
   transition: tranform 0.2s;
+  font-family: "Poppins", sans-serif;
+  border-radius: 1em;
 }
 
 .submit:hover {
@@ -455,10 +497,14 @@ form {
 }
 
 .inputFields {
-  padding: 20px 0 20px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
   border: none;
   border-bottom: 1px solid black;
   background-color: #f7f7f5;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0.4em;
 }
 
 .bottomLinks {
@@ -523,12 +569,15 @@ footer {
   width: 30px;
 }
 
-@media (max-width: 1033px) {
+@media (max-width: 1215px) {
   .title h1 {
     font-size: 3rem;
   }
   .title h2 {
     font-size: 2rem;
+  }
+  .title button {
+    font-size: 1em;
   }
 }
 @media (max-width: 900px) {
@@ -566,7 +615,7 @@ footer {
   .headerNav ul {
     position: fixed;
     right: -100%;
-    top: 50px;
+    top: 75px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -633,21 +682,30 @@ footer {
     text-align: center;
   }
 }
-@media (max-width: 627px) {
+@media (max-width: 735px) {
   .title h1 {
     font-size: 2.5rem;
   }
   .title h2 {
     font-size: 1.75rem;
   }
+  .projectTitle {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
 }
-@media (max-width: 610px) {
+@media (max-width: 618px) {
   .title h1 {
     font-size: 2rem;
   }
   .title h2 {
     font-size: 1.5rem;
   }
+  .title button {
+    padding: 10px 30px;
+  }
+}
+@media (max-width: 750px) {
   .skills {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -682,13 +740,15 @@ footer {
     width: 100%;
   }
 }
-@media (max-width: 410px) {
+@media (max-width: 496px) {
   .title h1 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .title h2 {
-    font-size: 1rem;
+    font-size: 1em;
   }
+}
+@media (max-width: 410px) {
   .title button {
     padding: 10px 30px;
     font-size: 0.9rem;
@@ -703,5 +763,13 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     font-size: 0.9rem;
+  }
+}
+@media (max-width: 377px) {
+  .title h1 {
+    font-size: 1.3rem;
+  }
+  .title h2 {
+    font-size: 1rem;
   }
 }
