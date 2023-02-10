@@ -484,20 +484,18 @@ form {
   transition: tranform 0.2s;
   font-family: "Poppins", sans-serif;
   border-radius: 1em;
+  -webkit-appearance: none;
 }
 
 .submit:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
   background-color: #d16938;
+  -webkit-appearance: none;
 }
 
 .form {
   margin: 5px 0;
-}
-
-.form input {
-  padding: 15px 50px;
 }
 
 .inputFields {

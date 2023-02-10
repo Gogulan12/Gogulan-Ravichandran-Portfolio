@@ -407,20 +407,22 @@ form {
   transition: tranform 0.2s;
   font-family: "Poppins", sans-serif;
   border-radius: 1em;
+  -webkit-appearance: none;
 }
 
 .submit:hover {
   transform: scale(1.03);
   background-color: variables.$secondaryColor;
+  -webkit-appearance: none;
 }
 
 .form {
   margin: 5px 0;
 }
 
-.form input {
-  padding: 15px 50px;
-}
+// .form input {
+//   padding: 15px 50px;
+// }
 
 .inputFields {
   // padding: 20px 0 20px 0;
