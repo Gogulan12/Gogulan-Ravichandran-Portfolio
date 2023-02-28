@@ -76,8 +76,10 @@ header {
   background: url("../images/narciso-arellano-GHC4vOw3aY8-unsplash.jpg");
   background-position: center;
   background-size: cover;
-  // background-attachment: fixed;
-  // -webkit-transform: translateZ(0);
+  background-attachment: fixed;
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   opacity: 0.4;
   top: 0px;
   right: 0px;
