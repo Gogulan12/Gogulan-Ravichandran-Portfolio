@@ -68,6 +68,21 @@ header {
   flex-direction: column;
   height: 93vh;
   justify-content: center;
+  position: relative;
+}
+
+.title::before {
+  content: "";
+  background: url("../images/narciso-arellano-GHC4vOw3aY8-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.4;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
 }
 
 .title h2,
@@ -119,7 +134,7 @@ h4 {
   transition: tranform 0.2s;
   font-family: "Poppins", sans-serif;
   font-size: 1.25em;
-  border-radius: 1em;
+  border-radius: 0.4em;
 }
 .title button:hover {
   transform: scale(1.03);
@@ -139,7 +154,8 @@ h4 {
   flex-wrap: wrap;
   margin: 0 auto;
   box-sizing: none;
-  max-width: 1430px;
+  max-width: 1200px;
+  gap: 12px;
 }
 
 a {
@@ -406,7 +422,7 @@ form {
   cursor: pointer;
   transition: tranform 0.2s;
   font-family: "Poppins", sans-serif;
-  border-radius: 1em;
+  border-radius: 0.4em;
   -webkit-appearance: none;
 }
 
